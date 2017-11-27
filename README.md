@@ -26,6 +26,7 @@ $ npm i
 Run npm dev script to load webpack-dev-server:
 
 $ npm run dev
+
 3. See dev-server output
 
 Open your web-browser at:
