@@ -1,0 +1,36 @@
+{
+  "name": "map-rings",
+  "version": "0.0.1",
+  "description": "Demo application that allow the user to draw Rings on top of Google Maps",
+  "main": "index.js",
+  "scripts": {
+    "prod": "webpack",
+    "dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gil Epshtain",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/angular": "^1.6.39",
+    "@types/googlemaps": "^3.30.0",
+    "@types/lodash": "^4.14.85",
+    "@types/node": "^8.0.53",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.7",
+    "html-loader": "^0.5.1",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.19.0",
+    "ts-loader": "^3.1.1",
+    "typescript": "^2.6.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "dependencies": {
+    "angular": "^1.6.6",
+    "google-maps-api": "^2.0.1",
+    "lodash": "^4.17.4"
+  }
+}

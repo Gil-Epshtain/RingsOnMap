@@ -1,0 +1,45 @@
+<!-- *** Map Page *** -->
+<div ng-controller="MapPageController as mapPageCtrl"
+     class="map-page-container">
+
+    <!-- Header -->
+    <div class="map-page-header">
+        {{:: mapPageCtrl.pageTitle }}    
+    </div>
+
+    <!-- Content -->
+    <div class="map-page-content">
+        
+        <!-- Map -->
+        <div class="map-container">   
+            <map rings-list="mapPageCtrl.ringsList"
+                 rings-width="mapPageCtrl.ringsWidth">
+            </map>
+        </div>
+
+        <!-- Side Menu -->
+        <div class="sidemenu-container">
+            
+            <!-- Rings Width -->
+            <div class="sidemenu-rings-width">
+                <span>Rings width: </span>
+                <input type="number" class="sidemenu-rings-width-input" ng-model="mapPageCtrl.ringsWidth"/>
+                <span>meters</span>
+            </div>
+
+            <!-- Rings List -->
+            <div class="sidemenu-rings-list"> 
+                <map-rings-list list="mapPageCtrl.ringsList"
+                                on-delete-ring="mapPageCtrl.onDeleteMapRing(mapRingIndex)"
+                                on-add-ring="mapPageCtrl.onAddMapRing()">
+                </map-rings-list>
+            </div>
+            
+            <!-- Show only intersection  -->
+            <div class="sidemenu-only-intersection">
+                <input type="checkbox" ng-model="mapPageCtrl.isShowOnlyIntersection"/>
+                <span>Show only rings intersection</span>
+            </div> 
+        </div>
+    </div>
+</div>

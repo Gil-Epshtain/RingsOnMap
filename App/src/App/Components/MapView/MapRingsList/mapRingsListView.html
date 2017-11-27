@@ -1,0 +1,25 @@
+<div class="map-rings-list">
+    <!-- *** Map Rings List *** -->
+    
+    <div class="map-rings-list-title">
+        Map Rings List
+    </div>
+
+    <div class="map-rings-list-container">        
+        <div class="map-ring-item" ng-repeat="mapRing in mapRingsList">
+            <map-rings-list-item is-active="mapRing.isActive"
+                                 lat="mapRing.lat"
+                                 long="mapRing.lng"
+                                 radius="mapRing.radius"
+                                 color="mapRing.color"
+                                 on-delete=onDelete($index)>
+            </map-rings-list-item>
+        </div>
+    </div>
+
+    <div class="map-rings-list-add">
+        <div class="map-rings-list-add-button" ng-click="addRing()" title="Add new ring to map">
+            Add new ring
+        </div>
+    </div>
+</div>

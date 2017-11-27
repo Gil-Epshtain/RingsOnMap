@@ -1,0 +1,36 @@
+<div class="ring-item">
+    <!-- *** Map Ring Item *** -->
+    <div class="ring-item-menu">
+        <div class="ring-item-menu-item">
+            <input type="checkbox" class="ring-item-checkbox" ng-model="isActive" title="Toggle ring on map"/>
+        </div>
+        <div class="ring-item-menu-item">
+                <input type="color" class="ring-item-color" ng-model="color" title="Select ring color"/>
+        </div>
+        <div class="ring-item-menu-item">
+            <div ng-click="deleteRing()" title="Delete ring">
+                <img ng-src="./App/Assets/Icons/delete_16x16.png" class="ring-item-delete-icon" />
+            </div>
+        </div>
+    </div>    
+    <div class="ring-item-info">
+        <div class="ring-item-info-item">
+            <span class="ring-item-info-item-text">
+                Latitude:
+            </span>
+            <input type="number" class="ring-item-info-item-input" ng-model="lat" title="Latitude coordinates" />
+        </div>
+        <div class="ring-item-info-item">
+            <span class="ring-item-info-item-text">
+                Longitude:
+            </span>
+            <input type="number" class="ring-item-info-item-input" ng-model="long" title="Longitude coordinates" />
+        </div>
+        <div class="ring-item-info-item">
+            <span class="ring-item-info-item-text">
+                Radius:
+            </span>
+            <input type="number" class="ring-item-info-item-input" ng-model="radius" title="Radius in meters" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Rings</title>
+
+    <!-- *** Favicon ***-->
+    <link rel="icon" type="image/png" href="App/Assets/Icons/icon_128x128.png">
+
+</head>
+<body ng-app="App">
+
+    <!-- *** Application Injection Point *** -->
+    <div ng-controller="AppController as appCtrl"> 
+        <div ng-include="appCtrl.mapPageUrl"></div>
+    </div>
+
+    <!-- *** WebPack Bundle *** -->
+    <script src="bundle.js"></script>
+</body>
+</html>

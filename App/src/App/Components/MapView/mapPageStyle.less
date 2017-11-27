@@ -1,0 +1,89 @@
+.map-page-container
+{
+    display: block;
+    position: absolute;
+    background-color: #313131;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .map-page-header
+    {
+        display: block;
+        position: relative;
+        height: 30px;
+        padding: 10px 0 10px 15px;
+        font-family: arial;
+        font-size: 30px;
+        color: #0dbacc;
+    }
+
+    .map-page-content
+    {
+        display: block;
+        position: relative;
+        height: ~"calc(100% - 70px)";
+        padding: 10px;
+        white-space: nowrap; 
+
+        .map-container
+        {
+            display: inline-block;
+            position: relative;
+            width: 70%;
+            height: 100%;
+            border: 2px solid #0dbacc;
+            vertical-align: top;
+        }
+
+        .sidemenu-container
+        {
+            display: inline-block;
+            position: relative;
+            background-color: #5f5a5a;
+            width: 240px;
+            height: 100%;
+            vertical-align: top;
+            border: 2px solid #0dbacc;
+            font-family: arial;
+            color: #0dbacc;
+            font-weight: bolder;
+
+            .sidemenu-rings-width
+            {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 40px;
+                padding-left: 5px;
+                line-height: 40px;
+                font-size: 15px;
+
+                .sidemenu-rings-width-input
+                {
+                    width: 50px;
+                }
+            }
+
+            .sidemenu-rings-list
+            {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: ~"calc(100% - 80px)";
+            }
+
+            .sidemenu-only-intersection
+            {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 40px;
+                padding-left: 5px;
+                line-height: 40px;
+                font-size: 15px;
+            }
+        }
+    }
+}
